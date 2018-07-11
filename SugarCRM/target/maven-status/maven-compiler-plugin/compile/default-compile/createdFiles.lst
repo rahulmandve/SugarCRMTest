@@ -1,0 +1,12 @@
+com\sugarcrm\pages\HomePage.class
+com\sugarcrm\pages\CampaignsPage.class
+com\sugarcrm\util\TestUtil.class
+com\sugarcrm\util\WebEventListner.class
+com\sugarcrm\pages\MarketingPage.class
+com\sugarcrm\extendReportListner\ExtendReportListner.class
+com\sugarcrm\pages\SupportPage.class
+com\sugarcrm\pages\SalesPage.class
+com\sugarcrm\pages\EmailsPage.class
+com\sugarcrm\base\TestBase.class
+com\sugarcrm\pages\LeadsPage.class
+com\sugarcrm\pages\LoginPage.class

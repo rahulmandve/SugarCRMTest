@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SugarCRM Application Automation Test">
+	<listeners>
+		<listener class-name="com.sugarcrm.extendReportListner.ExtendReportListner"></listener>
+	</listeners>
+
+  <test name="SugarCRM Application Testcases">
+    <classes>
+   	 	<class name="com.sugarcrm.testcases.LoginPageTest"/>
+   	 	<class name="com.sugarcrm.testcases.HomepageTest"/>
+   	 	<class name="com.sugarcrm.testcases.LeadsPageTest"/>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

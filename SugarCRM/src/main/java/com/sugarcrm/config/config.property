@@ -1,0 +1,7 @@
+url = http://sugar.cyberdroid.biz/index.php?module=Users&action=Login
+
+username = mrahul11
+
+password = rahul@123
+
+browser = chrome
