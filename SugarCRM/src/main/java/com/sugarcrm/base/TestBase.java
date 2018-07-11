@@ -20,7 +20,8 @@ public class TestBase {
 
 	public TestBase() {
 	try{
-		FileInputStream fis=new FileInputStream("F:/Framework/SugarCRM/src/main/java/com/sugarcrm/config/config.property");
+		FileInputStream fis=new FileInputStream("C:/Users/hp/git/SugarCRMTest/SugarCRM/src/main/java/com/sugarcrm/config/config.property");
+	
 		pro=new Properties();
 		pro.load(fis);
 	}
