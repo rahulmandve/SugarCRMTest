@@ -23,6 +23,8 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//a[contains(text(),'Leads') ]")
 	WebElement leadslink;
 	
+	@FindBy(xpath="//a[contains(text(),'Tasks') ]")
+	WebElement taskslink;
 	
 	public HomePage() {
 	PageFactory.initElements(d, this);	
@@ -55,6 +57,15 @@ public class HomePage extends TestBase{
 		a.moveToElement(marketinglink).build().perform();
 		a.moveToElement(leadslink).build().perform();
 		leadslink.click();
+	}
+	public void clickOnSalesLink()
+	{
+		Actions a=new Actions(d);
+		a.moveToElement(saleslink).build().perform();
+		a.moveToElement(taskslink).build().perform();
+		taskslink.click();
+		
+		
 	}
 
 }
