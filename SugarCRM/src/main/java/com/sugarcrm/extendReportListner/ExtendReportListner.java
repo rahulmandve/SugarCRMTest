@@ -32,8 +32,7 @@ public class ExtendReportListner implements IReporter{
 				ITestContext context=r.getTestContext();
 				buildTestNodes(context.getPassedTests(),LogStatus.PASS);
 				buildTestNodes(context.getFailedTests(),LogStatus.FAIL);
-				buildTestNodes(context.getSkippedTests(),LogStatus.SKIP);
-				
+				buildTestNodes(context.getSkippedTests(),LogStatus.SKIP);	
 						
 			}
 		}

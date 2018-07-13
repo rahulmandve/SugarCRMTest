@@ -1,6 +1,7 @@
 package com.sugarcrm.testcases;
 /*
- * Author Rahul Mandve
+ * 
+Author Rahul Mandve
  * 
  */
 import org.testng.Assert;
@@ -13,37 +14,43 @@ import com.sugarcrm.pages.HomePage;
 import com.sugarcrm.pages.LoginPage;
 
 public class LoginPageTest extends TestBase{
+	
 	LoginPage loginpage;
 	HomePage homepage;
-@BeforeMethod
-public void setUp()
-{
-	launchBrowser();
-	loginpage=new LoginPage();
-}
+	
+	@BeforeMethod
+	public void setUp()
+	{
+		launchBrowser();
+		loginpage=new LoginPage();
+		homepage= new HomePage();
+	}
 
-@Test(priority=1)
-public void verifyLoginPageTitleTest()
-{
-	String title=loginpage.verifyPageTitle();
-	Assert.assertEquals(title, "SugarCRM");
-}
+	@Test(priority=1)
+	public void verifyLoginPageTitleTest()
+	{
+		String title=loginpage.verifyPageTitle();
+		Assert.assertEquals(title, "SugarCRM");
+		System.out.println("Title Verify Successfully");
+	}
 
-@Test(priority=2)
-public void verifyCompanyLogoTest()
-{
-	Assert.assertTrue(loginpage.verifyCompanyLogo());
-}
+	@Test(priority=2)
+	public void verifyCompanyLogoTest()
+	{
+		Assert.assertTrue(loginpage.verifyCompanyLogo());
+		System.out.println("Logo is present on Webpage");
+	}
 
-@Test()
-public void loginTest()
-{
-	homepage=loginpage.login(pro.getProperty("username"), pro.getProperty("password"));	
-}
-@AfterMethod
-public void closeBrwoser()
-{
-	d.quit();	
-}
+	@Test(priority=3)
+	public void loginTest()
+	{
+		homepage=loginpage.login(pro.getProperty("username"), pro.getProperty("password"));	
+	}
+	
+	@AfterMethod
+	public void close()
+	{
+		d.quit();	
+	}
 
 }
