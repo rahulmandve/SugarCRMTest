@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.sugarcrm.base.TestBase;
 
 public class HomePage extends TestBase{
+	
+	
 	@FindBy(xpath="//a[contains(text(),'rahul mandve')]")
 	WebElement username;
 	
@@ -17,7 +19,7 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//a[contains(text(),'Sales')]")
 	WebElement saleslink;
 	
-	@FindBy(xpath="//a[contains(text(),'Support')]")
+	@FindBy(xpath="//a[@id='grouptab_2' and text()='Support']")
 	WebElement supportlink;
 	
 	@FindBy(xpath="//a[contains(text(),'Leads') ]")
@@ -25,6 +27,9 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath="//a[contains(text(),'Tasks') ]")
 	WebElement taskslink;
+	
+	@FindBy(xpath="//a[@id='moduleTab_2_Projects' and text()='Projects']")
+	WebElement projectlink;
 	
 	public HomePage() {
 	PageFactory.initElements(d, this);	
@@ -58,13 +63,19 @@ public class HomePage extends TestBase{
 		a.moveToElement(leadslink).build().perform();
 		leadslink.click();
 	}
-	public void clickOnSalesLink()
+	public void clickOnTaskslink()
 	{
 		Actions a=new Actions(d);
 		a.moveToElement(saleslink).build().perform();
 		a.moveToElement(taskslink).build().perform();
-		taskslink.click();
-		
+		taskslink.click();	
+	}
+	public void clickOnProjectsLink()
+	{
+		Actions a=new Actions(d);
+		a.moveToElement(supportlink).build().perform();
+		a.moveToElement(projectlink).build().perform();
+		projectlink.click();
 		
 	}
 

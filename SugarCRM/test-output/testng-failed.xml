@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sugarcrm.testcases.LoginPageTest">
+      <class name="com.sugarcrm.testcases.ProjectsPageTest">
         <methods>
-          <include name="closeBrwoser"/>
           <include name="setUp"/>
-          <include name="loginTest"/>
+          <include name="createProjectsTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.sugarcrm.testcases.LoginPageTest -->
+      </class> <!-- com.sugarcrm.testcases.ProjectsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

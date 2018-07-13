@@ -8,17 +8,18 @@ import org.testng.annotations.Test;
 import com.sugarcrm.base.TestBase;
 import com.sugarcrm.pages.HomePage;
 import com.sugarcrm.pages.LoginPage;
-import com.sugarcrm.pages.TasksPage;
+import com.sugarcrm.pages.ProjectsPage;
 import com.sugarcrm.util.TestUtil;
 
-public class TasksPageTest extends TestBase{
+public class ProjectsPageTest extends TestBase{
+	
 	LoginPage loginpage;
-	TasksPage taskspage;
 	HomePage homepage;
-	String sheetname="tasks";
+	ProjectsPage projectspage;
+	String sheetname="project";
 	
 	
-	public TasksPageTest() {
+	public ProjectsPageTest() {
 	super();
 	}
 	@BeforeMethod
@@ -26,29 +27,28 @@ public class TasksPageTest extends TestBase{
 	{
 		launchBrowser();
 		loginpage=new LoginPage();
-		taskspage=new TasksPage();
 		homepage=new HomePage();
+		projectspage=new ProjectsPage();
 		loginpage.login(pro.getProperty("username"), pro.getProperty("password"));
 	}
 	
 	@DataProvider
-	public Object[][] testData()
+	public Object[][] testdata()
 	{
-		
-		Object[][] data=TestUtil.testData(sheetname);
+		Object [][] data=TestUtil.testData(sheetname);
 		return data;
 	}
-	
-	@Test(priority=1,dataProvider="testData")
-	public void createTasks(String subj,String stat,String date,String name,String prio)
+	@Test(priority=1,dataProvider="testdata")
+	public void createProjectsTest(String name,String status,String prio,String sdate,String edate)
 	{
-		homepage.clickOnTaskslink();
-		taskspage.clickOnCreateLink();
-		taskspage.createTasks(subj, stat, date, name, prio);
+		homepage.clickOnProjectsLink();
+		projectspage.clickOnCreateLink();
+		projectspage.createProjects(name, status, prio, sdate, edate);
+		
 	}
 	
-	@AfterMethod
-	public void close()
+	 @AfterMethod
+	 public void close()
 	{
 		d.quit();
 	}
