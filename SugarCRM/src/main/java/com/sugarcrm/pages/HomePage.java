@@ -43,7 +43,8 @@ public class HomePage extends TestBase{
 		return username.isDisplayed();
 	}
 	public MarketingPage clickOnMarketingLink()
-	{	marketinglink.click();
+	{	
+		marketinglink.click();
 		return new MarketingPage();
 	}
 	public SalesPage clickOnSalesLinke()

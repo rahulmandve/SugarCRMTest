@@ -33,7 +33,8 @@ public class TestUtil extends TestBase{
 		try{
 			
 			fis=new FileInputStream(excelpath);
-			book=new WorkbookFactory().create(fis);
+			
+			book=WorkbookFactory.create(fis);
 			
 		}catch(Exception e)
 		{

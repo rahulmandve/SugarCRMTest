@@ -30,7 +30,7 @@ public class LoginPageTest extends TestBase{
 	public void verifyLoginPageTitleTest()
 	{
 		String title=loginpage.verifyPageTitle();
-		Assert.assertEquals(title, "SugarCRM");
+		Assert.assertEquals(title, "SugarcRM");
 		System.out.println("Title Verify Successfully");
 	}
 

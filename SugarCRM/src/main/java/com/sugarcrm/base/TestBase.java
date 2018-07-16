@@ -55,6 +55,7 @@ public class TestBase {
 	d.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
 	d.manage().timeouts().implicitlyWait(TestUtil.IMPLICITWAIT, TimeUnit.SECONDS);
 	d.get(pro.getProperty("url"));
+
 	}
 	
 	
