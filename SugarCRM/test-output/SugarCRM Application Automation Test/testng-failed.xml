@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SugarCRM Application Automation Test]">
+  <listeners>
+    <listener class-name="com.sugarcrm.extendReportListner.ExtendReportListner"/>
+  </listeners>
+  <test thread-count="5" name="SugarCRM Application Testcases(failed)">
+    <classes>
+      <class name="com.sugarcrm.testcases.LoginPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="verifyCompanyLogoTest"/>
+          <include name="setUp"/>
+          <include name="verifyLoginPageTitleTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.sugarcrm.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- SugarCRM Application Testcases(failed) -->
+</suite> <!-- Failed suite [SugarCRM Application Automation Test] -->

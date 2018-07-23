@@ -12,7 +12,7 @@
    	 	<class name="com.sugarcrm.testcases.HomepageTest"/>
    	 	<class name="com.sugarcrm.testcases.LeadsPageTest"/>
    	 	<class name="com.sugarcrm.testcases.TasksPageTest"/>
-   	 	<class name="com.sugarcrm.testcases.ProjectsPageTest"/>
+   	 	<class name="com.sugarcrm.testcases.ProjectsPageTest"/> 
    	 	
 	</classes>
   </test> <!-- Test -->

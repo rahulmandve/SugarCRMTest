@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47717" started-at="2018-07-14T10:59:09Z" finished-at="2018-07-14T10:59:57Z">
+  <suite name="Default suite" duration-ms="63327" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:58:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47717" started-at="2018-07-14T10:59:09Z" finished-at="2018-07-14T10:59:57Z">
+    <test name="Default test" duration-ms="63327" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:58:08Z">
       <class name="com.sugarcrm.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="14209" started-at="2018-07-14T10:59:09Z" finished-at="2018-07-14T10:59:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="11682" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:1, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyLoginPageTitleTest" duration-ms="33" started-at="2018-07-14T10:59:23Z" finished-at="2018-07-14T10:59:23Z">
+        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:1, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyLoginPageTitleTest" duration-ms="48" started-at="2018-07-23T09:57:16Z" finished-at="2018-07-23T09:57:16Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [SugarcRM] but found [SugarCRM]]]>
@@ -56,31 +56,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="1724" started-at="2018-07-14T10:59:23Z" finished-at="2018-07-14T10:59:25Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="1292" started-at="2018-07-23T09:57:16Z" finished-at="2018-07-23T09:57:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="10585" started-at="2018-07-14T10:59:25Z" finished-at="2018-07-14T10:59:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="13312" started-at="2018-07-23T09:57:18Z" finished-at="2018-07-23T09:57:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCompanyLogoTest()[pri:2, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyCompanyLogoTest" duration-ms="62" started-at="2018-07-14T10:59:35Z" finished-at="2018-07-14T10:59:35Z">
+        <test-method status="PASS" signature="verifyCompanyLogoTest()[pri:2, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyCompanyLogoTest" duration-ms="84" started-at="2018-07-23T09:57:31Z" finished-at="2018-07-23T09:57:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyLogoTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="886" started-at="2018-07-14T10:59:35Z" finished-at="2018-07-14T10:59:36Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="937" started-at="2018-07-23T09:57:31Z" finished-at="2018-07-23T09:57:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="12583" started-at="2018-07-14T10:59:36Z" finished-at="2018-07-14T10:59:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="19127" started-at="2018-07-23T09:57:32Z" finished-at="2018-07-23T09:57:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="loginTest" duration-ms="6611" started-at="2018-07-14T10:59:49Z" finished-at="2018-07-14T10:59:56Z">
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="loginTest" duration-ms="15850" started-at="2018-07-23T09:57:51Z" finished-at="2018-07-23T09:58:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="945" started-at="2018-07-14T10:59:56Z" finished-at="2018-07-14T10:59:57Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="933" started-at="2018-07-23T09:58:07Z" finished-at="2018-07-23T09:58:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
