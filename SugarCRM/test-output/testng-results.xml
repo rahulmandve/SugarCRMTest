@@ -1,17 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63327" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:58:08Z">
+  <suite name="SugarCRM Application Automation Test" duration-ms="164131" started-at="2018-07-23T10:55:22Z" finished-at="2018-07-23T10:58:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63327" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:58:08Z">
-      <class name="com.sugarcrm.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="11682" started-at="2018-07-23T09:57:05Z" finished-at="2018-07-23T09:57:16Z">
+    <test name="SugarCRM Application Testcases" duration-ms="164131" started-at="2018-07-23T10:55:22Z" finished-at="2018-07-23T10:58:06Z">
+      <class name="com.sugarcrm.testcases.ProjectsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.ProjectsPageTest@271053e1]" name="setUp" is-config="true" duration-ms="26131" started-at="2018-07-23T10:57:08Z" finished-at="2018-07-23T10:57:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:1, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyLoginPageTitleTest" duration-ms="48" started-at="2018-07-23T09:57:16Z" finished-at="2018-07-23T09:57:16Z">
+        <test-method status="PASS" signature="createProjectsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sugarcrm.testcases.ProjectsPageTest@271053e1]" name="createProjectsTest" duration-ms="13912" started-at="2018-07-23T10:57:34Z" data-provider="testdata" finished-at="2018-07-23T10:57:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation Testing]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[In Review]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[high]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[07/11/2018]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[07/15/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectsTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.ProjectsPageTest@271053e1]" name="close" is-config="true" duration-ms="1011" started-at="2018-07-23T10:57:48Z" finished-at="2018-07-23T10:57:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.sugarcrm.testcases.ProjectsPageTest -->
+      <class name="com.sugarcrm.testcases.HomepageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.HomepageTest@5f341870]" name="setUp" is-config="true" duration-ms="22602" started-at="2018-07-23T10:55:39Z" finished-at="2018-07-23T10:56:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitleTest()[pri:1, instance:com.sugarcrm.testcases.HomepageTest@5f341870]" name="verifyPageTitleTest" duration-ms="33" started-at="2018-07-23T10:56:01Z" finished-at="2018-07-23T10:56:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitleTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.HomepageTest@5f341870]" name="close" is-config="true" duration-ms="1395" started-at="2018-07-23T10:56:01Z" finished-at="2018-07-23T10:56:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.sugarcrm.testcases.HomepageTest -->
+      <class name="com.sugarcrm.testcases.TasksPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.TasksPageTest@4f7d0008]" name="setUp" is-config="true" duration-ms="23445" started-at="2018-07-23T10:56:37Z" finished-at="2018-07-23T10:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createTasks(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sugarcrm.testcases.TasksPageTest@4f7d0008]" name="createTasks" duration-ms="5897" started-at="2018-07-23T10:57:01Z" data-provider="testData" finished-at="2018-07-23T10:57:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Create Leads]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Completed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[02/07/2018]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vinay ]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[High]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTasks -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.TasksPageTest@4f7d0008]" name="close" is-config="true" duration-ms="951" started-at="2018-07-23T10:57:07Z" finished-at="2018-07-23T10:57:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.sugarcrm.testcases.TasksPageTest -->
+      <class name="com.sugarcrm.testcases.LeadsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LeadsPageTest@553f17c]" name="setUp" is-config="true" duration-ms="23221" started-at="2018-07-23T10:56:04Z" finished-at="2018-07-23T10:56:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createLeadsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.sugarcrm.testcases.LeadsPageTest@553f17c]" name="createLeadsTest" duration-ms="8947" started-at="2018-07-23T10:56:27Z" data-provider="testData" finished-at="2018-07-23T10:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sanket]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Deshmukh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9521785884]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadsTest -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LeadsPageTest@553f17c]" name="close" is-config="true" duration-ms="1052" started-at="2018-07-23T10:56:36Z" finished-at="2018-07-23T10:56:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.sugarcrm.testcases.LeadsPageTest -->
+      <class name="com.sugarcrm.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="setUp" is-config="true" duration-ms="15681" started-at="2018-07-23T10:55:22Z" finished-at="2018-07-23T10:55:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyLoginPageTitleTest()[pri:1, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="verifyLoginPageTitleTest" duration-ms="37" started-at="2018-07-23T10:55:37Z" finished-at="2018-07-23T10:55:37Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [SugarcRM] but found [SugarCRM]]]>
@@ -56,35 +188,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitleTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="1292" started-at="2018-07-23T09:57:16Z" finished-at="2018-07-23T09:57:18Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="close" is-config="true" duration-ms="1513" started-at="2018-07-23T10:55:37Z" finished-at="2018-07-23T10:55:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="13312" started-at="2018-07-23T09:57:18Z" finished-at="2018-07-23T09:57:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="setUp" is-config="true" duration-ms="15631" started-at="2018-07-23T10:57:49Z" finished-at="2018-07-23T10:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyCompanyLogoTest()[pri:2, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="verifyCompanyLogoTest" duration-ms="84" started-at="2018-07-23T09:57:31Z" finished-at="2018-07-23T09:57:31Z">
+        <test-method status="PASS" signature="verifyCompanyLogoTest()[pri:2, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="verifyCompanyLogoTest" duration-ms="65" started-at="2018-07-23T10:58:04Z" finished-at="2018-07-23T10:58:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCompanyLogoTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="937" started-at="2018-07-23T09:57:31Z" finished-at="2018-07-23T09:57:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="19127" started-at="2018-07-23T09:57:32Z" finished-at="2018-07-23T09:57:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="loginTest" duration-ms="15850" started-at="2018-07-23T09:57:51Z" finished-at="2018-07-23T09:58:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@f6c48ac]" name="close" is-config="true" duration-ms="933" started-at="2018-07-23T09:58:07Z" finished-at="2018-07-23T09:58:08Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.sugarcrm.testcases.LoginPageTest@14bf9759]" name="close" is-config="true" duration-ms="1324" started-at="2018-07-23T10:58:04Z" finished-at="2018-07-23T10:58:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- com.sugarcrm.testcases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SugarCRM Application Testcases -->
+  </suite> <!-- SugarCRM Application Automation Test -->
 </testng-results>

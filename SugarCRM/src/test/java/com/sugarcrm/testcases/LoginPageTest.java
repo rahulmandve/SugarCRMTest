@@ -1,7 +1,7 @@
 package com.sugarcrm.testcases;
 /*
  * 
-Author Rahul Mandve
+	Author Rahul Mandve
  * 
  */
 import org.testng.Assert;
@@ -25,12 +25,11 @@ public class LoginPageTest extends TestBase{
 		loginpage=new LoginPage();
 		homepage= new HomePage();
 	}
-
 	@Test(priority=1)
 	public void verifyLoginPageTitleTest()
 	{
 		String title=loginpage.verifyPageTitle();
-		Assert.assertEquals(title, "SugarcRM");
+		Assert.assertEquals(title, "SugarCRM");
 		System.out.println("Title Verify Successfully");
 	}
 
@@ -40,11 +39,10 @@ public class LoginPageTest extends TestBase{
 		Assert.assertTrue(loginpage.verifyCompanyLogo());
 		System.out.println("Logo is present on Webpage");
 	}
-
 	@Test(priority=3)
 	public void loginTest()
 	{
-		homepage=loginpage.login(pro.getProperty("username"), pro.getProperty("password"));	
+		homepage=loginpage.login(pro.getProperty("username"),pro.getProperty("password"));	
 	}
 	
 	@AfterMethod

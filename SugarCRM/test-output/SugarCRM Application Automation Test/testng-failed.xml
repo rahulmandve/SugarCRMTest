@@ -9,10 +9,8 @@
       <class name="com.sugarcrm.testcases.LoginPageTest">
         <methods>
           <include name="close"/>
-          <include name="verifyCompanyLogoTest"/>
           <include name="setUp"/>
           <include name="verifyLoginPageTitleTest"/>
-          <include name="loginTest"/>
         </methods>
       </class> <!-- com.sugarcrm.testcases.LoginPageTest -->
     </classes>
