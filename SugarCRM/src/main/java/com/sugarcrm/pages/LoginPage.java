@@ -20,6 +20,8 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//input[@class='button primary' and @id='login_button']")
 	WebElement loginbutton;
 	
+
+	
 	public LoginPage() {
 	PageFactory.initElements(d,this);
 	}
@@ -32,6 +34,9 @@ public class LoginPage extends TestBase{
 	{
 		return companyLogo.isDisplayed();
 	}
+	
+	
+	
 	public HomePage login(String un,String pass)
 	{
 		username.sendKeys(un);
